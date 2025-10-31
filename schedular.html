@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plant Watering Scheduler</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <h1>🌿Plantcare</h1>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="schedular.html">Scheduler</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="fertilizer.html">Fertilizer</a></li>
+      <li><a href="login.html" class="btn " id="loginBtn">Login</a></li>
+      <li><a href="download.html" class="btn" id="downloadBtn">Download</a></li>
+    </ul>
+
+  </nav>
+
+
+  <section class="content">
+    <h2>Watering Scheduler</h2>
+    <div id="taskContainer">
+      <!-- Schedule rows will appear here-->
+
+      <!-- Main App -->
+      <div class="container1">
+        <h1 class="title">Plan Your Plant Watering 🌱</h1>
+        <form id="plant-form">
+          <input type="text" class="plantname" id="plant-name" placeholder="Enter Plant Name" required />
+          <input type="number" id="watering-interval" placeholder="Water every (days)" min="1" required />
+          <button type="submit">Add Plant ➕</button>
+        </form>
+
+        <ul id="plant-list"></ul>
+      </div>
+
+      <footer>© 2025 PlantCare | Made with care</footer>
+
+      <script src="script.js"></script>
+</body>
+
+</html>
